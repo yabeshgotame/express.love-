@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You Said Yes! ❤️</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="card celebration">
+        <div class="card celebration animate__animated animate__zoomIn">
+            <div class="photo-gallery">
+                <img src="images/photo1.jpg" alt="Our Photo" class="gallery-photo animate__animated animate__fadeIn">
+                <img src="images/photo2.jpg" alt="Our Photo" class="gallery-photo animate__animated animate__fadeIn animate__delay-1s">
+                <img src="images/photo3.jpg" alt="Our Photo" class="gallery-photo animate__animated animate__fadeIn animate__delay-2s">
+            </div>
             <h1>You Said Yes! <span class="heart">❤️</span></h1>
             <div class="confetti">🎉</div>
             <p class="message">This is the beginning of something beautiful...</p>
-            <a href="./index.html" class="btn yes">Back to Home</a>
+            <div class="countdown">
+                <p>Our journey begins in: <span id="countdown-timer">5</span> seconds</p>
+            </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
