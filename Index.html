@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You | My Heart</title>
-    <meta name="description" content="A special message for someone extraordinary">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <title>express.love | For You</title>
+    <meta name="description" content="A heartfelt message for someone special">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/heart.svg" type="image/svg+xml">
 </head>
 <body>
-    <canvas id="particles"></canvas>
+    <div class="particles-container" id="particles"></div>
     <div class="container">
         <header class="header">
-            <h1 class="title">For Someone <span>Exceptional</span></h1>
-            <div class="heart-loader">❤</div>
+            <h1 class="title">express.<span>love</span></h1>
+            <div class="subtitle">For Someone <span>Extraordinary</span></div>
         </header>
 
         <main class="main-content">
             <section class="quotes-section">
-                <div class="quote-card">
+                <div class="quote-box">
                     <svg class="quote-icon" viewBox="0 0 24 24">
                         <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
                     </svg>
-                    <p class="quote">"You're the human equivalent of the golden ratio - perfectly imperfect in every way."</p>
+                    <p class="quote">"In your smile I see something more beautiful than the stars."</p>
                 </div>
-                <div class="quote-card">
+                <div class="quote-box">
                     <svg class="quote-icon" viewBox="0 0 24 24">
                         <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
                     </svg>
-                    <p class="quote">"If you were a CSS property, you'd be 'position: absolute' in my heart."</p>
+                    <p class="quote">"You're the missing piece I never knew I needed."</p>
                 </div>
             </section>
 
             <section class="interaction-section">
                 <h2 class="question">Do You Like Me?</h2>
-                <div class="button-group">
-                    <button id="yesBtn" class="btn btn--primary">
-                        <span>Absolutely</span>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn btn--primary">
+                        <span>Yes</span>
                         <svg class="btn-icon" viewBox="0 0 24 24">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                         </svg>
                     </button>
-                    <button id="noBtn" class="btn btn--secondary">
-                        <span>Not Really</span>
+                    <button id="no-btn" class="btn btn--secondary">
+                        <span>No</span>
                         <svg class="btn-icon" viewBox="0 0 24 24">
                             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
                         </svg>
@@ -55,10 +53,10 @@
         </main>
 
         <footer class="footer">
-            <p>Created with <span class="heart-beat">❤</span> for you</p>
+            <p>Created with <svg class="heart-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> by yabeshgotame</p>
         </footer>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-                </html>
+    </html>
