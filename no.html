@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wait... What?</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card animate__animated animate__shakeX">
+            <div class="photo-frame">
+                <img src="images/sad.jpg" alt="Sad Face" class="photo animate__animated animate__wobble animate__infinite">
+            </div>
             <h1>Wait... What? <span class="heart">😢</span></h1>
             <p id="savage-message">I think you clicked the wrong button accidentally...</p>
             
             <div class="buttons">
-                <a href="./yes.html" class="btn yes">Actually, Yes</a>
+                <a href="yes.html" class="btn yes animate__animated animate__pulse animate__infinite">Actually, Yes</a>
                 <a href="#" id="no-btn" class="btn no">Still No</a>
             </div>
         </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
