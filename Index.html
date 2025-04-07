@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An Important Question For You</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card animate__animated animate__fadeIn">
+            <div class="photo-frame">
+                <img src="images/photo1.jpg" alt="Our Photo" class="photo animate__animated animate__pulse animate__infinite" id="main-photo">
+            </div>
             <h1>My Dearest <span class="heart">❤️</span></h1>
             <p class="question">Will you make me the happiest person by being mine?</p>
             
             <div class="buttons">
-                <a href="./yes.html" class="btn yes">Yes</a>
-                <a href="./no.html" class="btn no">No</a>
+                <a href="yes.html" class="btn yes animate__animated animate__pulse animate__infinite">Yes</a>
+                <a href="no.html" class="btn no">No</a>
             </div>
         </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
                 </html>
