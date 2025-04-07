@@ -3,48 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nice Try | Truth Revealed</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <title>Wait... What?</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="no-page">
-    <canvas id="particles"></canvas>
+<body>
     <div class="container">
-        <div class="truth-bomb">
-            <h1 class="savage-title">Reality Check</h1>
-            
-            <div class="savage-message">
-                <p class="truth-line">Your browser history says otherwise...</p>
-                <p class="truth-line">Your heart rate spikes when I'm near</p>
-                <p class="truth-line">That smile when you see me? Yeah, we both know</p>
-            </div>
-            
-            <div class="lie-detector">
-                <div class="detector-face">
-                    <div class="eyes">
-                        <div class="eye"></div>
-                        <div class="eye"></div>
-                    </div>
-                    <div class="mouth"></div>
-                    <div class="sweat"></div>
-                </div>
-                <div class="detector-result">LIE DETECTED</div>
-            </div>
-            
-            <div class="second-chance">
-                <p class="chance-question">Want to try that answer again?</p>
-                <a href="./index.html" class="btn btn--primary btn--savage">
-                    <svg class="btn-icon" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    <span>Fine, I Like You</span>
-                </a>
-            </div>
+        <h1>Nice try... but that's not an option 😏</h1>
+        <div class="savage-messages">
+            <p id="message">You must have clicked by accident. Let's try that again.</p>
+        </div>
+        <div class="buttons">
+            <a href="yes.html" class="btn yes-btn">FINE, I'LL SAY YES</a>
+            <a href="#" id="no-btn" class="btn no-btn">STILL NO</a>
         </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-    </html>
+</html>
