@@ -1,16 +1,5 @@
-// Main script with all functionality
+// For no.html - handle the savage responses
 document.addEventListener('DOMContentLoaded', function() {
-    // For index.html - photo animation
-    const mainPhoto = document.getElementById('main-photo');
-    if (mainPhoto) {
-        setInterval(() => {
-            mainPhoto.classList.remove('animate__pulse');
-            void mainPhoto.offsetWidth; // Trigger reflow
-            mainPhoto.classList.add('animate__pulse');
-        }, 2000);
-    }
-
-    // For no.html - handle the savage responses
     const noBtn = document.getElementById('no-btn');
     const messageEl = document.getElementById('savage-message');
     
@@ -68,19 +57,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
+    
     // For yes.html - countdown timer
-    const countdownTimer = document.getElementById('countdown-timer');
-    if (countdownTimer) {
-        let count = 5;
+    const countdownEl = document.getElementById('countdown-timer');
+    if (countdownEl) {
+        let countdown = 5;
         const timer = setInterval(() => {
-            count--;
-            countdownTimer.textContent = count;
+            countdown--;
+            countdownEl.textContent = countdown;
             
-            if (count <= 0) {
+            if (countdown <= 0) {
                 clearInterval(timer);
-                // You can redirect to another page or do something special
-                // window.location.href = "special.html";
+                // Redirect to a special page or do something else
+                // window.location.href = "special-message.html";
             }
         }, 1000);
     }
