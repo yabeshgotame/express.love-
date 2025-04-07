@@ -1,0 +1,163 @@
+:root {
+    --primary: #ff6b6b;
+    --secondary: #ff8e8e;
+    --accent: #ff4757;
+    --text: #2f3542;
+    --light: #f1f2f6;
+    --success: #2ed573;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffeef1 100%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.heart {
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+}
+
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.yes {
+    background: var(--success);
+    color: white;
+}
+
+.yes:hover {
+    background: #25b562;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(46, 213, 115, 0.3);
+}
+
+.no {
+    background: var(--light);
+    color: var(--text);
+}
+
+.no:hover {
+    background: #dfe4ea;
+    transform: scale(1.05);
+}
+
+.celebration {
+    animation: fadeIn 1s ease;
+}
+
+.confetti {
+    font-size: 3rem;
+    margin: 20px 0;
+    animation: bounce 1s infinite alternate;
+}
+
+.message {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: var(--text);
+}
+
+#savage-message {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    }
